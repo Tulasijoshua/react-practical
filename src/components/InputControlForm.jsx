@@ -2,7 +2,7 @@ import React from 'react'
 import { IMaskInput } from 'react-imask'
 
 
-const ContactNumberMask = '+{00}(0000)00-0000'
+const ContactNumberMask = '+{000}(0)000-000-000'
 const EmailAddressMask = /^\S*@?\S*$/
 
 
@@ -16,7 +16,7 @@ export default function InputControlForm() {
           <IMaskInput
             className="form-control"
             mask={ContactNumberMask}
-            placeholder="+21(6951)46-6542"
+            placeholder="+233(0)559-802-618"
             onAccept={(value, mask) => console.log(value, mask)}
             value=""
           />
@@ -40,7 +40,7 @@ export default function InputControlForm() {
             mask={Date}
             placeholder="Date"
             min={new Date(2015, 0, 1)}
-            max={new Date(2022, 0, 1)}
+            max={new Date(2025, 0, 1)}
             onAccept={(value, mask) => console.log(value, mask)}
           />
         </div>
@@ -53,6 +53,7 @@ export default function InputControlForm() {
             onAccept={(value, mask) => console.log(value, mask)}
           />
         </div>
+        <button>Submit</button>
       </form>
     </div>
   )
