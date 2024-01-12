@@ -11,7 +11,7 @@ function App() {
     <>
       <div>
         {/* <InputControlForm /> */}
-        <LazyLoad />
+        {/* <LazyLoad /> */}
       </div>
     </>
   )
